@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical DBMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Medical Distribution & Manufacturing</h1>
+        <p>Medical DBMS Management System</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#suppliers">Suppliers</a>
+        <a href="#medicines">Medicines</a>
+        <a href="#distributors">Distributors</a>
+        <a href="#inventory">Inventory</a>
+        <a href="#sales">Sales</a>
+    </nav>
+
+    <section id="home">
+        <h2>Dashboard</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Suppliers</h3>
+                <p id="supplierCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Medicines</h3>
+                <p id="medicineCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Distributors</h3>
+                <p id="distributorCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Sales</h3>
+                <p id="salesCount">0</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="suppliers">
+        <h2>Suppliers</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+
+            <tbody id="supplierTable">
+            </tbody>
+        </table>
+    </section>
+
+    <section id="medicines">
+        <h2>Medicines</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Medicine Name</th>
+                    <th>Price</th>
+                    <th>Supplier ID</th>
+                </tr>
+            </thead>
+
+            <tbody id="medicineTable">
+            </tbody>
+        </table>
+    </section>
+
+    <section id="distributors">
+        <h2>Distributors</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+
+            <tbody id="distributorTable">
+            </tbody>
+        </table>
+    </section>
+
+    <section id="inventory">
+        <h2>Inventory</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Medicine</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+
+            <tbody id="inventoryTable">
+            </tbody>
+        </table>
+    </section>
+
+    <section id="sales">
+        <h2>Sales</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Medicine ID</th>
+                    <th>Distributor ID</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+
+            <tbody id="salesTable">
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Medical DBMS Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
